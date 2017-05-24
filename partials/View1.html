@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>View 1</h2>
+Search:
+    <br />
+    <input type="text" data-ng-model="filter.search" />
+    <br />
+    <ul>
+    <li data-ng-repeat="i in clients|filter:filter.search"
+    
+    </ul>
+        <br />
+        Client name: <br />
+        <input type="text" data-ng-model="newClient.name" />
+        <br />
+        Client city:<br />
+        <input type="text" data-ng-model="newClient.city" />
+        <br />
+        <button data-ng-click="addClient()"> Add Client < /button>
+        <br />
+        <a href="#view2">View2</a>
+</div>
+        
+
+
+
+
+
+
+</div>
