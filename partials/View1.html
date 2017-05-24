@@ -5,7 +5,7 @@ Search:
     <input type="text" data-ng-model="filter.search" />
     <br />
     <ul>
-    <li data-ng-repeat="i in clients|filter:filter.search"
+    <li data-ng-repeat="i in clients|filter:filter.search">{{i.name|uppercase}} - {{i.city|lowercase}}</li>
     
     </ul>
         <br />
@@ -15,10 +15,10 @@ Search:
         Client city:<br />
         <input type="text" data-ng-model="newClient.city" />
         <br />
-        <button data-ng-click="addClient()"> Add Client < /button>
+        <button data-ng-click="addClient()"> Add Client  </button>
         <br />
-        <a href="#view2">View2</a>
-</div>
+        <a href="#view2">View2 </a>
+
         
 
 

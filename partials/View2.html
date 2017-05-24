@@ -5,7 +5,7 @@ city:
     <input type="text" data-ng-model="city" />
     <br />
     <ul>
-    <li data-ng-repeat="i in clients|filter:city"|orderby:"city">{{i.name|uppercase}} - {{i.city|lowercase}} </li>
+    <li data-ng-repeat="i in clients|filter:city|orderby:city">{{i.name|uppercase}} -{{i.city|lowercase}} </li>
     </ul>
 
 

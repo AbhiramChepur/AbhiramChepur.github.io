@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html data-ng-app="demoApp"> 
@@ -14,7 +15,7 @@
         <li data-ng-repeat="i in clients|filter:search"|orderby:"city">{{i.name|uppercase}} - {{i.city|lowercase}} </li>
     </ul>
         </div>
-    <script src= "angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script>
         var demoApp=angular.module('demoApp',[]);
     function SimpleController($scope){
